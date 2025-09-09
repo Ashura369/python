@@ -24,9 +24,6 @@ print(a[-4:-1])
 # endswith
 print(a.endswith("et")) # wheather its ends with et or not
 
-# capitalize
-print(a.capitalize())  # Output: 'Jeet'
-
 # replace
 print(a.replace('jeet', 'biswajeet'))  # Output: 'biswajeet'
 
@@ -40,4 +37,14 @@ print(a.find('xyz'))      # Output: -1
 a = 'jeet pradhan jeet'
 print(a.count('jeet'))  # Output: 2
 print(a.count('a'))     # Output: 2
+
+# to upper case
+print(a.upper())
+
+# to lower case
+print(a.lower())
+
+
+# capitalize -- capitalize the first letter
+print(a.capitalize())  # Output: 'Jeet'
 
