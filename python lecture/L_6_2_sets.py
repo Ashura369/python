@@ -1,5 +1,6 @@
 # set is the collection of unordered items
 # each element must be unique and immutable
+    # it means set itself is mutable but the elements in the set are mutable
 
 # SETS IN PYTHON
 
@@ -63,7 +64,7 @@ print("Difference using method:", a.difference(b))
 print()
 
 # Symmetric Difference
-print("Symmetric Difference (a ^ b):", a ^ b)  # elements not common to both
+print("Symmetric Difference (a ^ b):", a ^ b)  # prints the elements which are not common to both
 print("Symmetric Difference using method:", a.symmetric_difference(b))
 print()
 
@@ -72,7 +73,7 @@ print("*********************************************")
 # Other Set Methods
 print("Length of set a:", len(a))
 print("Is 2 in set a?", 2 in a)
-print("Is set a disjoint with set b?", a.isdisjoint(b))
+print("Is set a disjoint with set b?", a.isdisjoint(b))     # if two sets are disjoint are then it will return true, otherwise it will be false
 print("Is a subset of b?", a.issubset(b))
 print("Is a superset of b?", a.issuperset(b))
 print("Is a ∩ b a subset of a?", (a & b).issubset(a))

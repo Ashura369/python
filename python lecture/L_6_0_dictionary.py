@@ -1,5 +1,5 @@
 # dictionary are used to store data values in key:value pairs
-# unordered, mutable(changable) & do  not allow duplicate keys
+# unordered, mutable(changable) & do not allow duplicate keys
 
 
 dictionaries = {
