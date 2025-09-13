@@ -1,5 +1,7 @@
 list = [1,2,3,4,5,6,7,8,4,86,55,9,62,64,10,62,47,5662,65,7,5415,15,41,2,254,8,51,54,84,15,8]
 
+# these below are the example of for else loop
+
 for i in list:
     if i >= 100:
         print('This number ',i, 'is greater then 100')
@@ -19,7 +21,7 @@ for i in list:
         print(i, 'is an odd')
 
 else:
-    print('END OF THE LOOP')
+    print('END OF THE LOOP')    # So "END OF THE LOOP" will always print unless you 'break' out of the loop.
 
 print('******************************************************************')
 
