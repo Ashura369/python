@@ -11,20 +11,10 @@ with open(fileName, "x+") as f:
 '''
 
 # w
-with open(fileName, 'w+') as f:
+with open(fileName, 'w+') as f:     # when you dont have a file with the given name, and you write a file usign 'w' / 'a' it wil immediately create file and put the text written in 'w' / 'a'
     f.write('Hii my name is Biswa')
     f.seek(0)
     print(f.read())
-
-
-# r
-print('************************************************')
-with open(fileName, 'r+') as f:
-    print(f.read())
-
-    f.seek(0)
-    print(f.read())
-print('************************************************')
 
 # a 
 with open(fileName, 'a+') as f:
@@ -33,5 +23,14 @@ with open(fileName, 'a+') as f:
     f.seek(0)
     print(f.read())
 
+# r
+print('************************************************')
+with open(fileName, 'r+') as f:
+    # f.write('THIS IS THE LAST LINE\n')       # 'r+' is used for both reding and overwriting file
+    print(f.readline()) # read one line
 
+    f.seek(0)           # when you read a file the cursor sets at the end the last line in the file, but when you put this line, the cursor sets to the very beginnig of the first line
+    print(f.read())     # read entire file
+    print(f.read())     # will print nothing, bcoz the cursor is set to the last
+print('************************************************')
 
