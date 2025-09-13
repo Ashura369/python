@@ -22,7 +22,7 @@ types
 '''
 
 # opening a file
-book = open("D:\THE CODE\python\python lecture\L_10_1.txt", "r")    
+book = open("D:\THE CODE\python\python lecture\L_10_0.txt", "r")    
 # 'r' stands for the read mode
 
 # reading a file
@@ -36,7 +36,7 @@ book.close()
 # rather than writing a code that you have to close at the end of the code, you can do the below
 print('*'*120)
 
-with open(r"D:\THE CODE\python\python lecture\L_10_1.txt", "r") as book:
+with open(r"D:\THE CODE\python\python lecture\L_10_0.txt", "r") as book:
     data = book.read()
     print(data)
     print(type(data))
@@ -45,20 +45,20 @@ with open(r"D:\THE CODE\python\python lecture\L_10_1.txt", "r") as book:
 print('*'*120)
 
 # Exclusive Create (x)
-with open(r"D:\THE CODE\python\python lecture\L_10_2.txt", "x") as book2:
-    book2.write("A new text file created using 'x ")        # REMEMBER if a text file on this name 'L_10_2.txt' already exists just delete that and then run this code or else it will throw error
+with open(r"D:\THE CODE\python\python lecture\L_10_0_1.txt", "x") as book2:
+    book2.write("A new text file created using 'x ")        # REMEMBER if a text file on this name 'L_10_0_1.txt' already exists just delete that and then run this code or else it will throw error
 
 # Read file with 'r'
-with open(r"D:\THE CODE\python\python lecture\L_10_2.txt", "r") as book2:
+with open(r"D:\THE CODE\python\python lecture\L_10_0_1.txt", "r") as book2:
     data = book2.read()
     print(data)
 
 # Overwrite file with 'w'
-with open(r"D:\THE CODE\python\python lecture\L_10_2.txt", "w") as book2:
+with open(r"D:\THE CODE\python\python lecture\L_10_0_1.txt", "w") as book2:
     book2.write("This is file x")
    
 # Read again to confirm overwrite
-with open(r"D:\THE CODE\python\python lecture\L_10_2.txt", "r") as book2:
+with open(r"D:\THE CODE\python\python lecture\L_10_0_1.txt", "r") as book2:
     data = book2.read()
     print(data)
 
@@ -67,10 +67,10 @@ print('*'*120)
 
 # append - adding new content into the file with out deleting the previously stored data
 
-with open(r"D:\THE CODE\python\python lecture\L_10_2.txt", "a") as book2:
+with open(r"D:\THE CODE\python\python lecture\L_10_0_1.txt", "a") as book2:
     book2.write('\n And now i have made some changes and have added new texts into it, without deleting the previous details')
 
-with open("D:\THE CODE\python\python lecture\L_10_2.txt", "r") as book2:
+with open("D:\THE CODE\python\python lecture\L_10_0_1.txt", "r") as book2:
     data = book2.read()
     print(data) 
 
