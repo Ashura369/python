@@ -1,41 +1,21 @@
-list = [1,2,3,4,5,6,7,8,4,86,55,9,62,64,10,62,47,5662,65,7,5415,15,41,2,254,8,51,54,84,15,8]
-
-for i in list:
-    if i >= 100:
-        print('This number ',i, 'is greater then 100')
-        continue        # It skips the rest of the current loop iteration, and move on to the next item
-    
-    print(i)
-else:
-    print('END OF THE LOOP')
+class person:
+      def __init__(self, name, age, height, location):
+            self.name = name
+            self.age = age
+            self.height = height
+            self.location = location
 
 
-print('******************************************************************')
+name = input('NAME: ')
+age = int(input('AGE: '))
+height = float(input('HEIGHT: '))
+location = input('LOCATION: ')
 
-for i in list:
-    if i % 2 == 0:
-        print(i, 'is an even')
-    else:
-        print(i, 'is an odd')
+p1 = person(name, age, height, location)
 
-else:
-    print('END OF THE LOOP')
-
-print('******************************************************************')
-
-# searching for a number
-
-x = 8
-
-for idx, i in enumerate(list):
-    if i == x:
-        print('the number',x,'is at index', idx)
-        continue
-
-else:
-    print('THE NUMBER YOU ARE LOOKING FOR IS NOT PRESENT IN THE LIST')
-
-
-
-
-
+print(f"""
+    NAME : {p1.name}
+    AGE : {p1.age}
+    HEIGHT : {p1.height}
+    LOCATION : {p1.location}
+""")

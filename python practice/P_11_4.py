@@ -5,6 +5,8 @@ line = 'I love Python Programming.'
 toList = list(line)        # converts string into characters
 toWord = line.split()      # splits into words
 
+# print(toList)
+
 # type 1 (manual counting)
 countChars = 0
 countWords = 0
@@ -41,11 +43,18 @@ print(line)
 print('total words: ', len(line))
 
 
+print('*******************************************')
 
+print('printing by letters---')
+for i in range(len(toList)):
+    print(toList[i],  end='')
 
+print()
+print()
 
-
-
+print('printing by words---')
+for i in range(len(toWord)):
+    print(toWord[i], end=' ')
 
 
 
