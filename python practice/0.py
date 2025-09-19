@@ -1,21 +1,25 @@
-class person:
-      def __init__(self, name, age, height, location):
-            self.name = name
-            self.age = age
-            self.height = height
-            self.location = location
+class Complex:
+    def __init__(self, A, B):
+        self.A = A
+        self.B = B
+    
+    def show(self):
+        print(self.A, 'i +', self.B, 'j')
 
+    def add(self, x, y):
+        newA = x.A + y.A
+        newB = x.B + y.B 
 
-name = input('NAME: ')
-age = int(input('AGE: '))
-height = float(input('HEIGHT: '))
-location = input('LOCATION: ')
+        return Complex(newA, newB)
 
-p1 = person(name, age, height, location)
+n1 = Complex(1, 3)
+n1.show()
+print()
 
-print(f"""
-    NAME : {p1.name}
-    AGE : {p1.age}
-    HEIGHT : {p1.height}
-    LOCATION : {p1.location}
-""")
+n2 = Complex(4, 6)
+n2.show()
+
+n3 = n1.add(n1, n2)
+print()
+
+n3.show()

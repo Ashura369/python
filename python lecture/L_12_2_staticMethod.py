@@ -4,7 +4,7 @@
 
 class Student:
     @staticmethod       # called 'decorators'   # if you make  3 non-parameterized methods (methods with no self), then you have to  make 3 '@staticmethod' for each methods
-    def hello():
+    def hello():        # in static methods you can neither use any attribute nor any function from the parent class
         print('WELCOME TO THE WORLD')
     
     def __init__(self, name, marks):
