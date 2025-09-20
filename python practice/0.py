@@ -1,6 +1,14 @@
-motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+guests = ['amit','ravi','kishan', 'gopal']
 
-rem = motorcycles.remove('HONDA'.lower())
+# sending invitaion
+for i in guests:
+    print(f"Welcome Mr.{i.upper()}")
 
-print(motorcycles)
+# suddenly amit cant come, so remove him and make a new invite for someone called shiva
+guests.remove('ravi')
+guests.insert(1, 'shiva')
+
+print('*************************************************')
+for i in guests:
+    print(f"Welcome Mr.{i.upper()}")
 
