@@ -1,6 +1,6 @@
-list = ['a','b','c','d']
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
 
-i = 0
-while (i < len(list)):
-    print(f"this is letter {list[i].upper()}")
-    i+=1
+rem = motorcycles.remove('HONDA'.lower())
+
+print(motorcycles)
+

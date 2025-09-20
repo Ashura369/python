@@ -23,10 +23,19 @@ print(n1)
 n1.insert(1, 888) # inserting 888 at idx 1
 print(n1)
 
-# remove
+# remove - removing an element by value
+# remove() method deletes only the first occurrence (in the list) of the value you specify 
 n1.remove(87)   # removing element 87
 print(n1)
 
-# pop - removes element at idx
-n1.pop(0)
-print(n1) # removes element at idx 0
+# pop - removes element at idx but returns the same element as well so that you can use it in further computation
+poppedElement = n1.pop(0)
+print("POPPED ELEMENT ",poppedElement) # removes element at idx 0
+print(n1)
+print("POPPED ELEMENT AT -1 INDEX IS ", n1.pop()) # if you dont define the index, then it will automatically remove the last element
+print(n1)
+
+
+# del - deletes the element at the specific index
+del n1[0]
+print(n1)
