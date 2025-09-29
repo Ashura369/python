@@ -1,4 +1,6 @@
 
+
+
 '''NESTED DICTIONARIES'''
 student = {
     'name': 'Biswajeet',
@@ -31,9 +33,9 @@ print("*********************************************")
 print("Items of student dictionary:", student.items())
 print("*********************************************")
 
-# Using get() method
+# Using get() method - returns value of keys
 print("Student's language using get():", student.get('language'))
-print("Student's grade using get():", student.get('grade', 'Not available'))  # key doesn't exist
+print("Student's grade using get():", student.get('grade', 'THE VALUE NOT AVAILABLE'))  # if the key 'grade' is not available, then the "THE VALUE IS NOT AVAILABLE" will be printed
 print("Student's grade using get():", student.get('grade'))  # key doesn't exist
 print("*********************************************")
 

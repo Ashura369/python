@@ -34,7 +34,12 @@ dictionaries['name'] = dictionaries['name'] + ' ' + dictionaries['surname']
 print(dictionaries)
 print('*********************************************')
 
+# the code down below will only print keys
+for i in dictionaries:
+    print(i)
+print('*********************************************')
 
-
-
+# printing keys and values using a for loop
+for key, value in dictionaries.items():
+    print(f"{key} : {value}")
 

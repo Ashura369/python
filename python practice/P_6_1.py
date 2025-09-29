@@ -38,9 +38,3 @@ for i in range(1, subjects + 1):
 
 print(f"\n {stud}")
 
-
-
-
-
-
-
